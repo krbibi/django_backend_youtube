@@ -1,7 +1,7 @@
 FROM python:3.11
 LABEL maintainer = 'krbibi'
 
-ENV PYTHONBUFFERED 1
+ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
