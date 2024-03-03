@@ -1,6 +1,6 @@
 version: "3.11"
 services:
-  # 1. Fist Container : Django
+  # 1. First Container: Django
   app:
     build:
       context: .
@@ -18,11 +18,11 @@ services:
       - DB_HOST=db
       - DB_NAME=youtube
       - DB_USER=krbibi
-      - DB_PASSWORD=password123
+      - DB_PASS=password123
     depends_on:
       - db
 
-  # 2. Second Container : PostgreSQL
+  # 2. Second Container: PostgreSQL
   db:
     image: postgres:16
     volumes:
@@ -31,3 +31,9 @@ services:
       - POSTGRES_DB=youtube
       - POSTGRES_USER=krbibi
       - POSTGRES_PASSWORD=password123
+# docker-compose down
+# docker-compose up --build
+
+# 오후
+# - db 컨테이너가 준비되면 -> django에서 db connection 시도
+# - CustomUser Model
