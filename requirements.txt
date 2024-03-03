@@ -1,5 +1,7 @@
-#1. django 5.0.1이상 6.0.0 미만
+# 1. django 5.0.1이상 6.0.0 미만
 django>=5.0.1,<6.0.0
-
-#2. django rest framework
+# 2. django rest framework
 djangorestframework>=3.14.0,<4.0.0
+# 3. psycopg2 - postgrsql adapter
+psycopg2>=2.9.9,<3.0.0
+drf-spectacular>=0.27.1,<0.28.0
