@@ -161,3 +161,7 @@ SubscriptionDetail
 [DELETE]: 구독취소
 
 (7) Reaction API
+
+- 좋아요, 싫어요 버튼
+- api/v1/reaction/{video_id}
+- api/v1/video/{video_id}/reaction -> 이 방식으로 진행
