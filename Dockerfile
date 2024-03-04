@@ -1,5 +1,5 @@
 FROM python:3.11
-LABEL maintainer="krbibi" 
+LABEL maintainer="krbibi"
 
 ENV PYTHONUNBUFFERED 1
 

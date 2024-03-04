@@ -162,6 +162,28 @@ SubscriptionDetail
 
 (7) Reaction API
 
-- 좋아요, 싫어요 버튼
+- 영상에 대해 좋아요, 싫어요를 추가하는 기능입니다.
+- REST FUL한 API인가
+
 - api/v1/reaction/{video_id}
-- api/v1/video/{video_id}/reaction -> 이 방식으로 진행
+- api/v1/video/{video_id}/reaction => 이 방식으로 API를 만들어 보도록 하겠습니다.
+- 어떤 API를 만들어야 할까요?
+
+ReactionDetail
+[POST] - 좋아요, 싫어요 생성 및 업데이트
+[DELETE] - 좋아요, 싫어요 삭제
+
+api/v1/video
+(1) 좋아요, 싫어요 데이터가 보이게끔 하는 게
+(2) 전체 영상 데이터를 내려줄 때, 좋아요 싫어요 갯수가 보이게 해주세요!
+
+(8) Chatting - SocketIO (화)
+
+(9) Deployment (수)
+
+# REST API
+
+C: Create => POST
+R: Read =>GET
+U: Update => PUT
+D: Delete => DELETE

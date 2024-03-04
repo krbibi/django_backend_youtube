@@ -24,7 +24,7 @@ CUSTOM_USER_APPS = [
     'notifications.apps.NotificationsConfig',
     'core',
     'rest_framework',
-    'drf_spectacular',
+    'drf_spectacular'
 ]
 
 INSTALLED_APPS = CUSTOM_USER_APPS + DJANGO_SYSTEM_APPS

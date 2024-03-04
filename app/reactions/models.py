@@ -3,6 +3,12 @@ from common.models import CommonModel
 from users.models import User
 from videos.models import Video
 
+# class Reactionmanager(models.Manager):
+#     def get_queryset():
+#         # likes_count = 
+#         # dislikes_count = 
+#         return 
+
 # yotube: 좋아요(like), 싫어요(dislike), 제거(removelike)
 class Reaction(CommonModel):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
